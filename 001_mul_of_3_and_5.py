@@ -3,11 +3,11 @@
 #we get 3, 5, 6 and 9. The sum of these multiples is 23.
 #Find the sum of all the multiples of 3 or 5 below 1000.
 
-max = 1000
-sum = 0
+max_value = 1000
+total = 0
 
-for i in range(1000):
-    if i % 3 == 0 or i%5 ==0:
-        sum+=i
+for i in range(max_value):
+    if i % 3 == 0 or i % 5 == 0:
+        total += i
 
-print(sum)
+print(total)

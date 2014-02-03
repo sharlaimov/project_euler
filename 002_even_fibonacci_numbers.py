@@ -5,16 +5,16 @@
 #By considering the terms in the Fibonacci sequence whose values do not exceed four million, 
 #find the sum of the even-valued terms.
 
-max = 4000000
+max_value = 4000000
 
-fib = [1,1]
+fib = [1, 1]
 value = fib[1]
-sum = 0
+total = 0
 
-while value < max:
-    if value%2 == 0:
-        sum+=value
+while value < max_value:
+    if value % 2 == 0:
+        total += value
     fib.append(value)
-    value = fib[len(fib)-1]+fib[len(fib)-2]
+    value = fib[len(fib) - 1] + fib[len(fib) - 2]
 
-print(sum)
+print(total)
