@@ -17,12 +17,11 @@ squares = []
 for i in range(1, 501):
     squares.append(i**2)
 
-
-print(squares)
-
 for b2 in squares:
-    for a2 in squares[:squares.index(b2)]:
+    for a2 in squares:
+        if a2 > b2:
+            break
         if a2+b2 in squares:
-            if squares.index(a2) + squares.index(b2) + squares.index(a2+b2) == 1000:
-                print(squares.index(a2), squares.index(b2), squares.index(a2+b2))
+            if squares.index(a2)+1 + squares.index(b2)+1 + squares.index(a2+b2)+1 == 1000:
+                print(squares.index(a2)+1, squares.index(b2)+1, squares.index(a2+b2)+1)
 
